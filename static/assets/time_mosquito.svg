@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <!-- Body -->
+    <path fill="#696969" d="M45 35 Q50 45 55 35 L55 25 Q50 20 45 25 Z"/>
+    <!-- Head -->
+    <circle fill="#4A4A4A" cx="50" cy="25" r="5"/>
+    <!-- Proboscis -->
+    <path stroke="#4A4A4A" stroke-width="1" d="M50 22 L50 15"/>
+    <!-- Wings -->
+    <path fill="#A9A9A9" opacity="0.6" d="M45 30 Q35 25 30 35 Q35 40 45 35"/>
+    <path fill="#A9A9A9" opacity="0.6" d="M55 30 Q65 25 70 35 Q65 40 55 35"/>
+    <!-- Legs -->
+    <path stroke="#696969" stroke-width="1" d="M47 35 Q40 45 35 50"/>
+    <path stroke="#696969" stroke-width="1" d="M50 35 Q50 45 50 55"/>
+    <path stroke="#696969" stroke-width="1" d="M53 35 Q60 45 65 50"/>
+    <!-- Clock hands -->
+    <circle fill="none" stroke="#4A4A4A" stroke-width="1" cx="50" cy="40" r="8"/>
+    <path stroke="#4A4A4A" stroke-width="1" d="M50 40 L50 35"/>
+    <path stroke="#4A4A4A" stroke-width="1" d="M50 40 L54 40"/>
+</svg>

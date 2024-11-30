@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - Malaria Awareness Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="leaderboard-container">
+        <h1>Таблица рекордов</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Место</th>
+                    <th>Игрок</th>
+                    <th>Очки</th>
+                    <th>Дата</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for score in scores %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ score.player_name }}</td>
+                    <td>{{ score.score }}</td>
+                    <td>{{ score.date.strftime('%Y-%m-%d') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/" class="button">Играть снова</a>
+    </div>
+</body>
+</html>

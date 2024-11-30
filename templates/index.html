@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria Awareness Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="hud">
+            <div id="score">Очки: <span id="scoreValue">0</span></div>
+            <div id="timer">Время: <span id="timeValue">30</span></div>
+        </div>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <h2>Викторина о малярии</h2>
+        <div id="question"></div>
+        <div id="answers"></div>
+        <button id="submit-quiz">Submit Answer</button>
+    </div>
+
+    <div id="game-over" class="hidden">
+        <h2>Игра окончена!</h2>
+        <p>Ваши очки: <span id="final-score"></span></p>
+        <input type="text" id="player-name" placeholder="Введите ваше имя">
+        <button id="submit-score">Отправить результат</button>
+        <button id="play-again">Играть снова</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/audio.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
